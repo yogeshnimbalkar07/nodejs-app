@@ -1,5 +1,5 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:654654228774:task-definition/nodejs-app-task-defination:1",
+    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:654654228774:task-definition/nodejs-app-task-defination:3",
     "containerDefinitions": [
         {
             "name": "nodejs-app",
@@ -18,7 +18,6 @@
             ],
             "essential": true,
             "environment": [],
-            "environmentFiles": [],
             "mountPoints": [],
             "volumesFrom": [],
             "systemControls": [],
@@ -32,7 +31,7 @@
     ],
     "family": "nodejs-app-task-defination",
     "executionRoleArn": "arn:aws:iam::654654228774:role/ecsTaskExecutionRole",
-    "revision": 1,
+    "revision": 3,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -59,7 +58,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2024-06-08T09:00:15.074Z",
-    "registeredBy": "arn:aws:iam::654654228774:root",
+    "registeredAt": "2024-06-08T10:36:58.599Z",
+    "registeredBy": "arn:aws:iam::654654228774:user/yogiuser",
     "tags": []
 }
