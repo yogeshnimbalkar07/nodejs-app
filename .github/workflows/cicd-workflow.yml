@@ -46,6 +46,6 @@ jobs:
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
         with:
           task-definition: nodejs-app-task-defination.json
-          service: nodejs-app-service
+          service: nodejs-app-services
           cluster: DevCluster
           wait-for-service-stability: true
