@@ -1,0 +1,65 @@
+{
+    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:654654228774:task-definition/nodejs-app-task-defination:1",
+    "containerDefinitions": [
+        {
+            "name": "nodejs-app",
+            "image": "654654228774.dkr.ecr.ap-south-1.amazonaws.com/nodejs-app:latest",
+            "cpu": 1024,
+            "memory": 3072,
+            "memoryReservation": 1024,
+            "portMappings": [
+                {
+                    "name": "nodejs-app-5000-tcp",
+                    "containerPort": 5000,
+                    "hostPort": 5000,
+                    "protocol": "tcp",
+                    "appProtocol": "http"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "environmentFiles": [],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "systemControls": [],
+            "resourceRequirements": [
+                {
+                    "value": "1",
+                    "type": "GPU"
+                }
+            ]
+        }
+    ],
+    "family": "nodejs-app-task-defination",
+    "executionRoleArn": "arn:aws:iam::654654228774:role/ecsTaskExecutionRole",
+    "revision": 1,
+    "volumes": [],
+    "status": "ACTIVE",
+    "requiresAttributes": [
+        {
+            "name": "com.amazonaws.ecs.capability.ecr-auth"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
+        },
+        {
+            "name": "ecs.capability.execution-role-ecr-pull"
+        }
+    ],
+    "placementConstraints": [],
+    "compatibilities": [
+        "EC2"
+    ],
+    "requiresCompatibilities": [
+        "EC2"
+    ],
+    "cpu": "1024",
+    "memory": "3072",
+    "runtimePlatform": {
+        "cpuArchitecture": "X86_64",
+        "operatingSystemFamily": "LINUX"
+    },
+    "registeredAt": "2024-06-08T09:00:15.074Z",
+    "registeredBy": "arn:aws:iam::654654228774:root",
+    "tags": []
+}
